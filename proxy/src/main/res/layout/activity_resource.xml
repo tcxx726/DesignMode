@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="ResourceBinding">
+
+        <variable
+            name="large"
+            type="boolean" />
+
+        <variable
+            name="firstName"
+            type="String" />
+
+        <variable
+            name="lastName"
+            type="String" />
+
+        <variable
+            name="bananaCount"
+            type="int" />
+
+        <variable
+            name="orangeCount"
+            type="int" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_bg"
+        android:orientation="vertical">
+
+        <com.example.proxy.widget.TitleView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@{large ? (int)@dimen/largePadding : (int)@dimen/smallPadding}"
+            android:text="@string/title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@{@string/nameFormat(firstName, lastName)}"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@{@plurals/banana(bananaCount)}"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@{@plurals/orange(orangeCount, orangeCount)}"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+</layout>

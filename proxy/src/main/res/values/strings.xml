@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <string name="loading">正在加载中，请稍后…</string>
+
+    <string name="title">Android设计模式之MVVM</string>
+
+    <string name="user_resource_data">使用资源数据</string>
+    <string name="update">更新用户信息</string>
+    <string name="user_data">用户信息</string>
+    <string name="default_data">默认数据</string>
+    <string name="refresh_data">刷新数据</string>
+    <string name="load_data">加载数据</string>
+
+    <string name="nameFormat">Full Name : %1$s : %2$s</string>
+
+    <plurals name="banana">
+        <item quantity="zero">zero bananas</item>
+        <item quantity="one">one banana</item>
+        <item quantity="two">two bananas</item>
+        <item quantity="few">few bananas</item>
+        <item quantity="many">many bananas</item>
+        <item quantity="other">other bananas</item>
+    </plurals>
+
+    <plurals name="orange">
+        <item quantity="one">Have an orange</item>
+        <item quantity="other">Have %d oranges</item>
+    </plurals>
 </resources>

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.example.proxy.databinding.ActivityMainBinding
 
-class BaseActivity<T: ViewBinding>: AppCompatActivity() {
+open class BaseActivity<T: ViewBinding>: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
