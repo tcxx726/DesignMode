@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tool="http://schemas.android.com/tools">
 
-    <com.example.proxy.widget.loading.ShapeLoadingView
+    <com.wiggins.mvvm.widget.loading.ShapeLoadingView
         android:id="@+id/shapeLoadingView"
         android:layout_width="24dp"
         android:layout_height="24dp"

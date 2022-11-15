@@ -30,7 +30,7 @@
         android:background="@color/theme_bg"
         android:orientation="vertical">
 
-        <com.example.proxy.widget.TitleView
+        <com.wiggins.mvvm.widget.TitleView
             android:id="@+id/titleView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

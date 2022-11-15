@@ -4,7 +4,7 @@
 
     <data>
 
-        <import type="com.example.proxy.bean.User" />
+        <import type="com.wiggins.mvvm.bean.User" />
 
         <variable
             name="user"
