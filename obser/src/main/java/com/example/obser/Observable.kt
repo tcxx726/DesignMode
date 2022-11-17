@@ -1,6 +1,6 @@
 package com.example.obser
 
-import java.util.*
+import android.util.Log
 
 /**
  * 发布者\被观察者
@@ -21,11 +21,17 @@ open class Observable {
     /**
      * 添加订阅者\观察者
      */
-    fun addObserver(observer: Observer?) {
+    fun addObserver(observer: User?) {
+//    fun addObserver(observer: Observer?) {
         if (observer == null) {
             throw NullPointerException("observer == null")
         }
-        synchronized(this) { if (!observers.contains(observer)) observers.add(observer) }
+        synchronized(this) {
+            if (!observers.contains(observer)){
+                Log.d("xuan", "------添加接收者：${observer.name}")
+                observers.add(observer)
+            }
+        }
     }
 
     /**
@@ -46,7 +52,9 @@ open class Observable {
      * 删除订阅者\观察者
      */
     @kotlin.jvm.Synchronized
-    fun deleteObserver(observer: Observer) {
+//    fun deleteObserver(observer: Observer) {
+    fun deleteObserver(observer: User) {
+        Log.d("xuan", "------删除接收者：${observer.name}")
         observers.remove(observer)
     }
 
@@ -55,13 +63,14 @@ open class Observable {
      */
     @kotlin.jvm.Synchronized
     fun deleteObservers() {
+        Log.d("xuan", "------删除所有接收者")
         observers.clear()
     }
 
     /**
      * 状态-->“修改”
      */
-    fun hasChanged(): Boolean {
+    private fun hasChanged(): Boolean {
         return changed
     }
 

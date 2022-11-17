@@ -1,6 +1,5 @@
 package com.wiggins.mvvm.utils;
 
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.Gravity;
@@ -13,8 +12,8 @@ import com.wiggins.mvvm.R;
 import com.wiggins.mvvm.app.MyApplication;
 
 /**
- * @Description Toast工具类
- * @Author 一花一世界
+ * @description Toast工具类
+ * @author 一花一世界
  */
 public class ToastUtil {
 
@@ -125,10 +124,6 @@ public class ToastUtil {
     }
 
     private static boolean isContext() {
-        if (getContext() != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return getContext() != null;
     }
 }

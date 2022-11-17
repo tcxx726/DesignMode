@@ -11,7 +11,8 @@ class Weather(var name: String) : Observable() {
      * 发布信息
      */
     fun sendMsg (state :String){
-        Log.d("xuan", "${name}发送天气信息")
+        Log.d("xuan", "\n")
+        Log.d("xuan", "----------${name}发布了一条天气信息--------")
         setChanged()
         notifyObservers(state)
     }

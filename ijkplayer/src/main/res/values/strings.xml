@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ijkplayer</string>
+
+
+    <!--ijk player-->
+    <string name="drop_packet_count">drop_count</string>
+    <string name="drop_packet_sum">drop_sum</string>
+    <string name="video_rate">v_rate</string>
+    <string name="audio_decoder">a_dec</string>
+    <string name="audio_sample_rate">a_rate</string>
+    <string name="v_codec">v-codec</string>
+    <string name="a_codec">a-codec</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+    <string name="load_cost">load-cost</string>
+    <string name="seek_cost">seek_cost</string>
+    <string name="seek_load_cost">seek_load_cost</string>
+    <string name="tcp_speed">tcp_speed</string>
+    <string name="bit_rate">bit_rate</string>
+</resources>
